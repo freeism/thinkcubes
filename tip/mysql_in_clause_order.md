@@ -1,4 +1,4 @@
-# MySql in절에 sort ordering하
+# MySql in절에 sort ordering 
 간혹 쿼리를 할 때, 한 번에 select하기 위해 in절을 이용하게 된다.
 다만 이 in절이라는 게 순서를 보장하지 않는다.
 optimizer에 plan에 따라서 움직이겠지만, 결국은 해당 값이 있는지만 체크하기 때문에

@@ -2,20 +2,20 @@
 ###### 부제 : 누가 이따구로 네이밍한거야
 
 애시당초에 올바른 데이터타입을 사용했다면 문제가 없었겠지만, 레거시 코드에 붙이다보면 타입캐스팅이 필요한 경우가 있다.
-```
+```java
 @RequestParam(value = "idx", required = true) String idx,
 @RequestParam(value = "value", required = true) String value
 ```
 
 평상시라면, required=true인 값이기 때문에 apache commons를 이용해서 파싱했을 것이다
-```
+```java
 int idxAsInt = NumberUtils.toInt(idx);
 int valueAsInt = NumberUtils.toInt(value);
 ```
 
 그런데 이후에 로직이 변경될 경우, default value = 0으로 적용되면 side-effect이 크게 발생할 것 같았다. 
 그래서 명시적인 parsing error를 만들기 위해 NumberUtils를 사용하지 않고 Integer 클래스를 사용하기로 했다.
-```
+```java
 int idxAsInt = Integer.getInteger(idx);
 int valueAsInt = Integer.getInteger(value);
 ```
@@ -49,7 +49,7 @@ java.lang.NullPointerException
 ```Integer.getInteger()```는 system property를 읽어오는 메소드라서 대부분의 경우(?) null을 return할 것이다. 
 
 그래서 NPE가 발생하게 된다.
-```
+```java
 Integer idxAsInteger = Integer.getInteger(idx);   // -> null
 int idxAsInt = Integer.getInteger(idx);   // -> NPE : 결과가 null이기 때문에, auto-unboxing하면서 NPE가 발생함.
 ```

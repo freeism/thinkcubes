@@ -7,3 +7,4 @@ cubes of knowledge about everythings
 
 ### Trouble Shooting
 * [맥, autokeyboard가 alfred에 적용되지 않을 때](troubleshooting/alfred-force-input-source.md)
+* [Integer.getInteger() 오류](troubleshooting/Integer.getInteger()-error.md)

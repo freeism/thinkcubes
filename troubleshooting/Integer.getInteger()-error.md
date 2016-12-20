@@ -13,7 +13,7 @@ int idxAsInt = NumberUtils.toInt(idx);
 int valueAsInt = NumberUtils.toInt(value);
 ```
 
-그런데 이후에 로직이 변경될 경우, default value = 0으로 적용되면 side-effect이 크게 발생할 것 같았다. 
+그런데 이후에 로직이 변경될 경우(가령, required가 빠진다거나), NumberUtils의 default value = 0으로 적용되면 side-effect이 크게 발생할 것 같았다. 
 그래서 명시적인 parsing error를 만들기 위해 NumberUtils를 사용하지 않고 Integer 클래스를 사용하기로 했다.
 ```java
 int idxAsInt = Integer.getInteger(idx);

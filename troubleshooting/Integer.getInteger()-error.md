@@ -34,6 +34,7 @@ java.lang.NullPointerException
   ...
 ```
 
+Integer 클래스의 static method는 아래와 같은 차이점을 가진다.
 > getInteger(String nm)
   Determines the integer value of the system property with the specified name.
 >

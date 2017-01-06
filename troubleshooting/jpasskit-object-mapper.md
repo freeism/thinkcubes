@@ -1,7 +1,7 @@
 ### JPassKit 적용중 오류 발생
 
 서비스에서 ios wallet을 제공하려고 하니, 예전과는 다르게 서버단 통신을 통해 인증받는 절차가 추가로 생겼단다.
-다만, 애플에서 제공하는 서버쪽 [데모](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195)를 보면 ruby로 만들어져있다
+다만, 애플에서 제공하는 서버쪽 [데모](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195)를 보면 ruby로 만들어져있다.
 왜 하필 루비인가? swift도 아니고... 여튼 그걸 java로 porting하려니 이미 만들어 놓은 것이 있을 것 같아서 구글링했더니,
 [jpasskit](https://www.google.co.kr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiU65GN3q3RAhWBQZQKHbGAAZYQFgggMAA&url=https%3A%2F%2Fgithub.com%2Fdrallgood%2Fjpasskit&usg=AFQjCNH6lvlwdYkacoqqVValEtwGNUYG3w)이
 그나마 제일 fork도 많이 되고, 사용도 하는 것 같아서 lib dependency를 추가했다.

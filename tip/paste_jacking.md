@@ -1,7 +1,6 @@
 ```html
 <html>
  	<p>echo "not evil"</p>
- 	
  	<script>
  		document.addEventListener('copy', function(e) {
  			console.log(e);

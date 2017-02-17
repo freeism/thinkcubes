@@ -1,6 +1,6 @@
 ---
 post_title: 'Post Title'
 layout: post_type_probably_post
-published: true_or_false
+published: false
 ---
 Post goes here.

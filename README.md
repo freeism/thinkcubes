@@ -9,3 +9,4 @@ cubes of knowledge about everythings
 * [맥, autokeyboard가 alfred에 적용되지 않을 때](troubleshooting/alfred-force-input-source.md)
 * [Integer.getInteger() 오류](troubleshooting/Integer.getInteger()-error.md)
 * [JPassKit 적용중 오류 발생](troubleshooting/jpasskit-object-mapper.md)
+* [Java8 interface](tip/java8-interface.md)

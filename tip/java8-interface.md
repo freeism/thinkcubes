@@ -106,6 +106,8 @@ public class IPhone implements CellPhone, MusicPlayer {
 Error:(7, 8) java: class kr.co.freeism.foo.IPhone inherits unrelated defaults for sound() from types kr.co.freeism.foo.CellPhone and kr.co.freeism.foo.MusicPlayer
 ```
 
+당연한 얘기겠지만, default에 의한 메소드를 선택할 수 없기 때문에 직접 구현체를 만들어 주면 된다.
+
 ```java
 public class IPhone implements CellPhone, MusicPlayer {
     @Override
@@ -116,6 +118,22 @@ public class IPhone implements CellPhone, MusicPlayer {
     @Override
     public void sound() {
       System.out.println("ring, music, ring, music~");
+    }
+}
+```
+
+혹은, default에 의한 메소드를 참조해줄 수도 있다.
+```java
+public class IPhone implements CellPhone, MusicPlayer {
+    @Override
+    public Bell getBell() {
+      return new Bell();
+    }
+    
+    @Override
+    public void sound() {
+      CellPhone.super.sound();
+      MusicPlayer.super.sound();
     }
 }
 ```

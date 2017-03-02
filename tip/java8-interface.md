@@ -106,6 +106,20 @@ public class IPhone implements CellPhone, MusicPlayer {
 Error:(7, 8) java: class kr.co.freeism.foo.IPhone inherits unrelated defaults for sound() from types kr.co.freeism.foo.CellPhone and kr.co.freeism.foo.MusicPlayer
 ```
 
+```java
+public class IPhone implements CellPhone, MusicPlayer {
+    @Override
+    public Bell getBell() {
+      return new Bell();
+    }
+    
+    @Override
+    public void sound() {
+      System.out.println("ring, music, ring, music~");
+    }
+}
+```
+
 실제로 실무에서 한 번 적용해봤는데, 굳이 abstract class를 만들고 싶지 않았던 케이스에서 간단하게 사용할 수 있어서 좋았다.
 ```java
 public interface BookingRequest {

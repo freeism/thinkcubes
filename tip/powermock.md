@@ -45,4 +45,4 @@ public class DateUtilTest {
 }
 ```
 
-:exclamation: 주의할 점은 `PrepareForTest`에서 `LocalDateTime.class`뿐 아니라 `DateUtil.class`(테스트객체)도 함께 등록되어야 한다는 사실이었다. 이것때문에 삽질을 좀 했다. 만약 테스트객체가 함께 등록되지 않으면, Test Class에서 `LocalDateTime.now()`를 찍어보면 mocking된 정보로 나오지만, 테스트객체에서 찍어보면 실제 정보로 표시된다.
+:exclamation: 주의할 점은 `PrepareForTest`에서 `LocalDateTime.class`뿐 아니라 `DateUtil.class`(테스트대상객체)도 함께 등록되어야 한다는 사실이었다. 이것때문에 삽질을 좀 했다. 만약 테스트대상객체가 함께 등록되지 않으면, Test Class에서 `LocalDateTime.now()`를 찍어보면 mocking된 정보로 나오지만, 테스트객체에서 찍어보면 실제 정보로 표시된다.

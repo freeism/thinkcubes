@@ -24,7 +24,7 @@ public class DateUtilTest {
     private static final LocalDateTime TODAY_SIX_OCLOCK = LocalDateTime.of(NOW, LocalTime.of(6, 0, 0));
   
     @Test
-    public void isCurrentTimeIsBetweenMidnightEndOfTimeIfYesterdayAndBeforeEndTime() throws Exception {
+    public void isCurrentTimeIsBetweenMidnightEndOfTimeIfYesterdayAndBeforeEndTime() {
       PowerMockito.mockStatic(LocalDateTime.class);
       when(LocalDateTime.now()).thenReturn(TODAY_ONE_OCLOCK);
   

@@ -10,3 +10,5 @@ cubes of knowledge about everythings
 * [Integer.getInteger() 오류](troubleshooting/Integer.getInteger()-error.md)
 * [JPassKit 적용중 오류 발생](troubleshooting/jpasskit-object-mapper.md)
 * [Java8 interface](tip/java8-interface.md)
+* [PowerMock 사용](tip/powermock.md)
+* [ModelMap의 구성](tip/modelmap.md)

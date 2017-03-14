@@ -5,7 +5,7 @@
 그래서 이번 기회에 해당 내용을 정리해두려고 한다.
 
 #### Definition
-[`@SuppressWarnings`](https://docs.oracle.com/javase/7/docs/api/java/lang/SuppressWarnings.html)는 컴파일러가 정적분석을 진행할 때 오류가 아니라고 마킹해주는 역할을 하고 있다. JDK 1.5 버전부터 지원하다보니, value값이 String으로 선언되어 있다. Enum이 아니다보니 생각보다 쓰기가 쉽지 않다. (심지어 오타가 나거나 틀려도 오류없이, 그냥 SuppressWarnings만 되지 않음)
+[`@SuppressWarnings`](https://docs.oracle.com/javase/7/docs/api/java/lang/SuppressWarnings.html)는 컴파일러가 정적분석을 진행할 때 오류가 아니라고 마킹해주는 역할을 하고 있다. JDK 1.5 버전부터 지원하다보니, value값이 String으로 선언되어 있다. Enum이 아니다보니 생각보다 쓰기가 쉽지 않다. (심지어 오타가 나거나 틀려도 오류없이, 그냥 SuppressWarnings만 되지 않는다)
 
 * all : 모든 경고를 억제
 * boxing : boxing/unboxing 오퍼레이션과 관련된 경고를 억제

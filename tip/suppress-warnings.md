@@ -32,7 +32,7 @@
 * unqualified-field-access : 규정되지 않은 필드 액세스와 관련된 경고를 억제
 * unused : 사용하지 않은 코드 및 불필요한 코드와 관련된 경고를 억제
 
-> 참고사이트 : http://www.ibm.com/support/knowledgecenter/ko/SS5JSH_9.1.1/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm
+> [참고사이트](http://www.ibm.com/support/knowledgecenter/ko/SS5JSH_9.1.1/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm)
 
 #### Example
 

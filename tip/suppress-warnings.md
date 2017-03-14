@@ -32,8 +32,6 @@
 * unqualified-field-access : 규정되지 않은 필드 액세스와 관련된 경고를 억제
 * unused : 사용하지 않은 코드 및 불필요한 코드와 관련된 경고를 억제
 
-> [참고사이트](http://www.ibm.com/support/knowledgecenter/ko/SS5JSH_9.1.1/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm)
-
 #### Example
 
 실제 적용 코드는 아래와 같다. 
@@ -97,3 +95,5 @@ public class PaymentRequest {
 #### Conclusion
 
 모든 코드는 제작자의 의도를 남겨야 하고, 해당 코드는 사용하고 있는 코드임을 확실하게 표시해줄 필요가 있다고 생각한다. 물론 비정상적인 코드를 만들고 `@SuppressWarnings`를 남발하는 것은 비추천한다.
+
+> [참고사이트](http://www.ibm.com/support/knowledgecenter/ko/SS5JSH_9.1.1/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm)

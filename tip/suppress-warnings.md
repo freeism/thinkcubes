@@ -90,7 +90,7 @@ public class PaymentRequest {
 }
 ```
 
-위처럼 `@SuppressWarnings("unused")`를 사용해서 정적오류를 제거했다.
+결과적으로, 위처럼 `@SuppressWarnings("unused")`를 사용해서 정적오류를 제거했다.
 
 #### Conclusion
 

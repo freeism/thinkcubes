@@ -1,4 +1,4 @@
-### @SuppressWarnings 활용
+## @SuppressWarnings 활용
 
 ### Overview
 나는 `@SuppressWarnings`를 별로 좋아하지 않는다. 코드를 잘 만들면 되는데, 굳이 정적분석을 무시할 필요가 없다는 생각때문이다. 그런데 코딩을 하다보니 반드시 써야할 경우가 생겼다. 단순히 IDE에서 노란 밑줄을 보고 무시해도 되지만, 불필요한 경고가 너무 많아지면 정말 필요한 경고를 무시하게 되는 경향이 생긴다. [깨진 유리창 이론](https://en.wikipedia.org/wiki/Broken_windows_theory)은 굳이 언급하지 않아도 될 정도로 유명하다.

@@ -29,7 +29,7 @@
 * sync-override : 동기화된 메소드를 오버라이드하는 경우 누락된 동기화로 인한 경고 억제
 * unchecked : 미확인 오퍼레이션과 관련된 경고를 억제
 * unqualified-field-access : 규정되지 않은 필드 액세스와 관련된 경고를 억제
-* unused : 사용하지 않은 코드 및 불필요한 코드와 관련된 경고를 억제 [^1]
+* unused : 사용하지 않은 코드 및 불필요한 코드와 관련된 경고를 억제 [<sup>1</sup>](#footnote)
 
 #### Example
 
@@ -97,4 +97,4 @@ public class PaymentRequest {
 
 #### Reference
 
-1. http://www.ibm.com/support/knowledgecenter/ko/SS5JSH_9.1.1/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm
+<a id="footnote">1.</a> http://www.ibm.com/support/knowledgecenter/ko/SS5JSH_9.1.1/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm

@@ -12,3 +12,4 @@ cubes of knowledge about everythings
 * [Java8 interface](tip/java8-interface.md)
 * [PowerMock 사용](tip/powermock.md)
 * [ModelMap의 구성](tip/modelmap.md)
+* [@SuppressWarnings](tip/suppress-warnings.md)

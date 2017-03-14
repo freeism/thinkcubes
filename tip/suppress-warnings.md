@@ -94,6 +94,6 @@ public class PaymentRequest {
 
 #### Conclusion
 
-모든 코드는 제작자의 의도를 남겨야 하고, 해당 코드는 사용하고 있는 코드임을 확실하게 표시해줄 필요가 있다고 생각한다. 물론 비정상적인 코드를 만들고 `@SuppressWarnings`를 남발하는 것은 비추천한다.
+**모든 코드에는 제작자의 의도를 남겨야 한다.** 위의 경우에는 사용하고 있는 코드임을 확실하게 표시해줄 필요가 있다고 생각한다. 물론 해당 annotation을 사용하지 않을 수 있는지 먼저 고민이 필요하다. 비정상적인 코드를 만들고 `@SuppressWarnings`를 남발하는 것은 비추천한다.
 
 > [참고사이트](http://www.ibm.com/support/knowledgecenter/ko/SS5JSH_9.1.1/org.eclipse.jdt.doc.user/tasks/task-suppress_warnings.htm)

@@ -9,14 +9,14 @@
 ```bash
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.php$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.php [L]
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
 ```
 
-참고링크 : http://www.wpbeginner.com/wp-tutorials/how-to-fix-wordpress-posts-returning-404-error/
+참고링크 : http://www.wpbeginner.com/wp-tutorials/how-to-fix-wordpress-posts-returning-404-error

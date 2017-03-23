@@ -18,3 +18,4 @@ cubes of knowledge about everythings
 * [Integer.getInteger() 오류](troubleshooting/Integer.getInteger()-error.md)
 * [JPassKit 적용중 오류 발생](troubleshooting/jpasskit-object-mapper.md)
 * [WordPress PermaLinks 404에러](troubleshooting/wordpress-404.md)
+* [@ExtensionMethod 오류](troubleshooting/extension-method.md)

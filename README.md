@@ -8,6 +8,7 @@ cubes of knowledge about everythings
 * [PowerMock 사용](tip/powermock.md)
 * [ModelMap의 구성](tip/modelmap.md)
 * [@SuppressWarnings](tip/suppress-warnings.md)
+* [Joiner/Splitter 활용](tip/joiner-splitter-ex.md)
 
 ##### MySQL
 * [Mysql select 쿼리에서 In()할 때 순서보장](tip/mysql-in-clause-order.md)

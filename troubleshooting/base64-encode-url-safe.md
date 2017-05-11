@@ -44,3 +44,38 @@ public class Base64 {
     }
 }
 ```
+
+mapping table이 다르기때문에, 같은 base64라 하더라도 urlsafe와 standard는 혼용하여 사용할 수 없다.
+
+```java
+@Test
+public void foo() {
+    String sample = "한미르";
+  
+    String encoded1 = Base64Utils.encodeToString(sample.getBytes());
+    System.out.println("encoded1 : " + encoded1);   // encoded1 : 66+8
+  
+    String encoded2 = Base64Utils.encodeToUrlSafeString(sample.getBytes());
+    System.out.println("encoded2 : " + encoded2);   // encoded2 : 66-8
+  
+    String decoded1 = new String(Base64Utils.decodeFromString(encoded1));
+    System.out.println("decoded1 : " + decoded1);   // decoded1 : 민
+  
+    String decoded2 = new String(Base64Utils.decodeFromUrlSafeString(encoded2));
+    System.out.println("decoded1 : " + decoded2);   // decoded1 : 민
+  
+    try {
+        String error1 = new String(Base64Utils.decodeFromUrlSafeString(encoded1));
+        System.out.println("error1 : " + error1);
+    } catch (Exception e) {
+        e.printStackTrace();    // java.lang.IllegalArgumentException: Illegal base64 character 2b
+    }
+  
+    try {
+       String error2 = new String(Base64Utils.decodeFromString(encoded2));
+       System.out.println("error2 : " + error2);
+    } catch (Exception e) {
+        e.printStackTrace();    // java.lang.IllegalArgumentException: Illegal base64 character 2b
+    }
+}
+```

@@ -21,3 +21,4 @@ cubes of knowledge about everythings
 * [WordPress PermaLinks 404에러](troubleshooting/wordpress-404.md)
 * [@ExtensionMethod 오류](troubleshooting/extension-method.md)
 * [Base64 encode 와 encodeUrlSafe 차이](troubleshooting/base64-encode-url-safe.md)
+* [Swagger에서 httpMethod multiple-value를 지원하지 않음](troubleshooting/swagger.md)

@@ -12,6 +12,7 @@ cubes of knowledge about everythings
 
 ##### MySQL
 * [Mysql select 쿼리에서 In()할 때 순서보장](tip/mysql-in-clause-order.md)
+* [Mysql Disk Full 체크](tip/mysql-size.md)
 
 
 ### Trouble Shooting

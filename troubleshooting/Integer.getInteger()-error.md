@@ -1,4 +1,5 @@
 ### Integer.getInteger()의 잘못된 사용
+
 ###### 부제 : 누가 이따구로 네이밍한거야
 
 애시당초에 올바른 데이터타입을 사용했다면 문제가 없었겠지만, 레거시 코드에 붙이다보면 타입캐스팅이 필요한 경우가 있다.
@@ -45,7 +46,7 @@ Integer 클래스의 static method는 아래와 같은 차이점을 가진다.
   Parses the string argument as a signed decimal integer.
 >
 > ref. http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html
-  
+
 우리가 일반적으로 원하는 기능은 string인 값을 integer로 변환하는 것인데, 그렇다면 ```Integer.valueOf()```나 ```Integer.parseInt()```를 사용해야 한다.
 ```Integer.getInteger()```는 system property를 읽어오는 메소드라서 대부분의 경우(?) null을 return할 것이다. 
 
